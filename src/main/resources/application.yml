@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: postgres
+    initialize: true
+    driver-class-name: org.postgresql.Driver
+    tomcat:
+      max-wait: 10000
+      max-active: 1000
+      max-idle: 100
+logging:
+  level:
+    ROOT: warn
+    org.springframework: info
+    org.hibernate: info
